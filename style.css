@@ -1,0 +1,106 @@
+body {
+  background-color: azure;
+}
+
+p {
+  text-align: center;
+}
+
+#first-area {
+height: 140px;
+}
+
+
+#title-game {
+  font-size: 60px;
+  color: blue;
+  margin-bottom: 10px;
+  margin-top: 10px;
+}
+
+#count-title {
+  font-size: 50px;
+
+}
+
+#count {
+  font-size: 50px;
+
+}
+
+#start-button {
+  height: 60px;
+  width: 200px;
+  font-size: 30px;
+  cursor: pointer;
+  background-color: aquamarine;
+}
+
+/* #game-area {
+  background-color: azure;
+} */
+
+button {
+  height: 60px;
+  width: 70px;
+  margin: 40px;
+  font-size: xx-large;
+  cursor: pointer;
+  background-color: gainsboro;
+  /* position: absolute; */
+}
+
+button:hover {
+  box-shadow: inset;
+  /* background-color: pink; */
+  transform: translateY(4px);
+  
+}
+
+/* #num1-5 {
+  position: relative;
+} */
+
+div {
+  display: flex;
+  justify-content: center;
+}
+
+#result-coment {
+text-align: center;
+font-size: 30px;
+margin-bottom: 50px;
+}
+
+.explanation-area {
+  display: inline;
+  /* text-align: center; */
+  height: 600px;
+  width: 400px;
+  background-color: lightgoldenrodyellow;
+  border-radius: 20px;
+  border: 20px;
+  margin: 15px;
+  /* padding-left: 20px; */
+  font-size: 30px;
+}
+
+ol {
+  padding-left: 70px;
+}
+
+li {
+  margin-top: 20px;
+}
+
+#app-area {
+  display: inline;
+  height: 800px;
+  width: 1200px;
+  background-color: aquamarine;
+  border-radius: 20px;
+  border-color: black;
+  margin: 15px;
+  padding-top: 20px;
+  font-size: 30px;
+}
