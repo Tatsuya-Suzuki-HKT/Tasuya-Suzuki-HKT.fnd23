@@ -20,6 +20,7 @@ const countElem = document.getElementById("timer");
 const commentArea = document.getElementById("comment-area");
 let clickCount = 0;
 let countDownNum = 0;
+let removeComment = document.getElementById("comment-area");
 
 startBtn.addEventListener("click", start);
 
@@ -28,6 +29,7 @@ function start() {
   numBtn[randomIndex].style.background = "pink";
   addClickListener(randomIndex);
   countDownNum = setInterval(countDown, 1000);
+  removeComment.removeChild(removeComment.firstElementChild);
 }
 
 function addClickListener() {
