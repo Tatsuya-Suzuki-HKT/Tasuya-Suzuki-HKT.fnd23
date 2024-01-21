@@ -2,24 +2,24 @@
 <html lang="ja">
 
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <meta name="theme-color" content="#000000">
-  <title>早押しゲーム</title>
-  <link rel="stylesheet" href="style.css">
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+  <meta name="theme-color" content="#000000" />
+  <title>⏲ Time CLICK ⏲</title>
+  <link rel="stylesheet" href="style.css" />
 </head>
 
 <body>
-  <p id="title-game">早押しゲーム（Time CLICK）</p>
+  <p class="title-game">早押しゲーム（Time CLICK）</p>
   <div id="first-area">
-    <p id="count-title">カウント：</p>
-    <p id="count">15</p>
+    <p id="timer-title">TIMER：</p>
+    <p id="timer">10</p>
     <button id="start-button">スタート</button>
   </div>
   <div id="num1-5">
-    <button id="num0">1</button>
-    <button id="num1">2</button>
-    <button id="num2">3</button>
+    <button>1</button>
+    <button>2</button>
+    <button>3</button>
     <button>4</button>
     <button>5</button>
   </div>
@@ -44,56 +44,53 @@
     <button>19</button>
     <button>20</button>
   </div>
-  <p id="result-coment">結果のコメント</p>
-
-  <hr>
+  <div id="comment-area">
+  </div>
+  <hr />
   <div>
     <div class="explanation-area">
-      <p>【アピールポイント】</p>
+      <p class="sub-title">【実装機能】</p>
       <ol>
-        <li>イベントボタン<br>ランダム表示</li>
-        <li>カウントダウン</li>
-        <li>条件分岐による<br>コメント変更</li>
-        <li>レイアウト編集</li>
+        <li class="bold-title">クリックイベントによる<br>ランダム表示＋連動</li>
+        <li>カウントダウンタイマー</li>
+        <li>クリック数に応じた<br>コメント表示</li>
+      </ol>
+      <p class="sub-title">【今後の課題】</p>
+      <ol>
+        <li>ランキング表示・集計</li>
+        <li>別モード選択(ナイトメア)</li>
+        <li>画面幅によるデザイン調整</li>
       </ol>
     </div>
     <div class="explanation-area">
-      <p>【苦労した事】</p>
+      <p class="sub-title">【工夫したポイント】</p>
       <ol>
-        <li>ランダム関数<br>繋ぎ合わせ</li>
-        <li>カウントダウン</li>
-        <li>カウントダウン</li>
+        <li class="bold-title">if文,for文を使わず実装 <br>したランダム機能</li>
+        <li class="bold-title">イベントリスナーの<br>連続使用</li>
       </ol>
-    </div>
-    <div class="explanation-area">
-      <p>【今後やりたい事】</p>
+      <p class="sub-title">【苦労したポイント】</p>
       <ol>
-        <li>データの集計</li>
-        <li>ナイトメアモード</li>
-        <li>ランキング表示</li>
-        <li>エラー回収</li>
-        <li>画面サイズに<br>合わせた<br>レイアウト編集</li>
+        <li class="bold-title">スコープ→変数の取扱い</li>
+        <li class="bold-title">イベントリスナーの取扱</li>
+        <li>コードを見やすくする<br>工夫(関数を分ける,順番)</li>
       </ol>
     </div>
   </div>
-  <hr>
+  <hr />
   <div>
     <div id="app-area">
-      <p>【アプリ開発背景】</p>
-      <p>職場で大事な事：安全第一 <br>（災害は絶対に起こさない、起こさせない）</p>
-      <p>私の思い：職場のメンバーから絶対に災害を起こさせない</p>
-      <p>現状の課題</p>
-      <ol>
-        <li>勤務開始時間が朝早く寝起きすぐ作業の人もいる（１直：６時半）</li>
-        <li>体調が悪くても少しならと我慢する頑張り屋が多い</li>
-      </ol>
-      <p>集中出来ていない、体調が悪い状態での作業は普段の３～４倍ケガをするリスクが高い（ChatGPT情報）</p>
-      <p id="title-game">早押しゲーム（Time CLICK）</p>
+      <p class="sub-title">【アプリ開発背景】</p>
+      <p>職場で大事な事：<span id="anzen">安全第一</span><br>※災害は絶対に起こさない、起こさせない</p>
+      <p class="sub-title">【現状の困り事】</p>
+      <p><span class="bold-title">①勤務開始時間が朝早く集中できていない</span><br>（１直:６時半 この時期はまだ日が出ておりません。。）</p>
+      <p><span class="bold-title">②体調が悪くても少しならと我慢する頑張り屋が多い</span><br>(体調は大丈夫かと聞かれたら大丈夫ですとしか言えません。。)</p>
+      <p class="sub-title">【安全のリスク】</p>
+      <p>集中出来ていない、体調が悪い状態での作業は<br>注意力が低下し<span id="anzen">ケガをするリスクが２倍以上高くなる</span></p>
+      <div id="app-second-area">
+        <button id="app-button">解決策 ChatGPT10</button>
+      </div>
     </div>
   </div>
-
-
-
 </body>
 <script type="text/javascript" src="script.js"></script>
 
