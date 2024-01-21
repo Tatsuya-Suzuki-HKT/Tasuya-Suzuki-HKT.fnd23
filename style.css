@@ -7,25 +7,22 @@ p {
 }
 
 #first-area {
-height: 140px;
+  height: 140px;
 }
 
-
-#title-game {
+.title-game {
   font-size: 60px;
   color: blue;
   margin-bottom: 10px;
   margin-top: 10px;
 }
 
-#count-title {
+#timer-title {
   font-size: 50px;
-
 }
 
-#count {
+#timer {
   font-size: 50px;
-
 }
 
 #start-button {
@@ -36,10 +33,6 @@ height: 140px;
   background-color: aquamarine;
 }
 
-/* #game-area {
-  background-color: azure;
-} */
-
 button {
   height: 60px;
   width: 70px;
@@ -47,41 +40,30 @@ button {
   font-size: xx-large;
   cursor: pointer;
   background-color: gainsboro;
-  /* position: absolute; */
 }
 
 button:hover {
   box-shadow: inset;
-  /* background-color: pink; */
   transform: translateY(4px);
-  
 }
-
-/* #num1-5 {
-  position: relative;
-} */
 
 div {
   display: flex;
   justify-content: center;
 }
 
-#result-coment {
-text-align: center;
-font-size: 30px;
-margin-bottom: 50px;
+#comment-area {
+  display: inline;
 }
 
 .explanation-area {
   display: inline;
-  /* text-align: center; */
-  height: 600px;
-  width: 400px;
+  min-height: 600px;
+  width: 550px;
   background-color: lightgoldenrodyellow;
   border-radius: 20px;
   border: 20px;
   margin: 15px;
-  /* padding-left: 20px; */
   font-size: 30px;
 }
 
@@ -95,7 +77,7 @@ li {
 
 #app-area {
   display: inline;
-  height: 800px;
+  min-height: 800px;
   width: 1200px;
   background-color: aquamarine;
   border-radius: 20px;
@@ -103,4 +85,33 @@ li {
   margin: 15px;
   padding-top: 20px;
   font-size: 30px;
+}
+
+.result-comment {
+  font-size: 30px;
+}
+
+#app-button {
+  height: 60px;
+  width: 400px;
+  margin: 40px;
+  font-size: xx-large;
+  border-radius: 10px;
+  cursor: pointer;
+  background-color: yellow;
+}
+
+.sub-title {
+  font-size: 35px;
+}
+
+#anzen {
+  color: red;
+  font-size: 38px;
+  font-weight: bold;
+}
+
+.bold-title {
+  font-weight: bold;
+  text-decoration: underline;
 }
