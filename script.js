@@ -66,8 +66,7 @@ function countDown() {
     clearInterval(countDownNum);
     startBtn.style.background = "";
     if (clickCount <= 5) {
-      createComment("いつもと比べてクリック数が少ないです。");
-      createComment("体調に変化はありませんか？");
+      createComment("クリック数が少ないです😢体調に変化はありませんか？");
     } else if (clickCount <= 8) {
       createComment(`【結果】 クリック数: 「${clickCount}」 Nice！いい感じ🙌`);
     } else {
